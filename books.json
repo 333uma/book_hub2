@@ -1,0 +1,65 @@
+{
+    "books": [
+        {
+            "id": "8301d74f-fa98-4fc7-a0d7-96b0b8d67bc9",
+            "title": "The Help",
+            "author_name": "Kathryn Stockett",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/the-novel-book.png"
+        },
+        {
+            "id": "5f7fe73a-c4f2-4d58-b4ad-ec88426e26be",
+            "title": "Rich Dad Poor Dad",
+            "author_name": "Robert Kiyosaki",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/rich-dad-poor-dad-book.png"
+        },
+        {
+            "id": "19cef045-ef9b-4898-a9e9-dc943e44da5e",
+            "title": "Atomic Habits",
+            "author_name": "James Clear",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/atomic-habits-book.png"
+        },
+        {
+            "id": "561d0af9-3cec-426d-9721-35ed8d7e9c3c",
+            "title": "Half Girlfriend",
+            "author_name": "Chetan Bhagat",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/half-girlfriend-book.png"
+        },
+        {
+            "id": "7850622e-1b70-4396-963d-e68d5a2577d7",
+            "title": "Eyes to the Wind",
+            "author_name": "Ady Barkan",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/eyes-to-the-wind-book.png"
+        },
+        {
+            "id": "1c9201d5-ffa9-4750-ad92-a5ce6009a747",
+            "title": "Harry Porter",
+            "author_name": "J. K. Rowling",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/harry-potter-book.png"
+        },
+        {
+            "id": "fb3cf65e-fd0f-4053-b525-8e9af7cf553e",
+            "title": "A Girl That Had To Be Strong",
+            "author_name": "Garima Pradhan",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/the-girl-that-had-to-be-strong-book.png"
+        },
+        {
+            "id": "0439de13-33a2-4303-af0c-088db339a67e",
+            "title": "How successful people Think",
+            "author_name": "John C. Maxwell",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/how-successful-people-think-book.png"
+        },
+        {
+            "id": "a94bf1b1-b49e-4ba2-8d41-3625cf6cee09",
+            "title": "The Beginning of Everything",
+            "author_name": "Robyn Schneider",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/the-beginning-of-everything-book.png"
+        },
+        {
+            "id": "1ef1dcc0-32a4-4a73-a598-4643ea919a5f",
+            "title": "1984",
+            "author_name": "George Orwell",
+            "cover_pic": "https://assets.ccbp.in/frontend/react-js/george-orwell-1984-book.png"
+        }
+    ],
+    "total": 10
+}
