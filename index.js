@@ -5,8 +5,6 @@ const {open} = require("sqlite");
 const sqlite3 = require("sqlite3");
 const books = require('./books.json');
 const dbPath = path.join(__dirname,'books.db');
-const cors = require("cors");
-app.use(cors());
 
 let db = null;
 
