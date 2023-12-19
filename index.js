@@ -5,6 +5,8 @@ const {open} = require("sqlite");
 const sqlite3 = require("sqlite3");
 const books = require('./books.json');
 const dbPath = path.join(__dirname,'books.db');
+const cors = require("cors");
+app.use(cors());
 
 let db = null;
 
@@ -51,6 +53,15 @@ app.get("/books/:id", async(request,response) => {
     response.send(getBook);
 })
 
+app.get("/update/:id", async (request,response) => {
+    const {id} = request.params;
+    let obj = {"title": "Beyond the village"};
+    let {title} = obj;
+    const updateTitleQuery = `UPDATE shelfbooks SET title = "${title}" WHERE id = "${id}"`;
+    const updateTitle = await db.run(updateTitleQuery);
+
+    response.send("Title Updated");
+})
 
 
 
