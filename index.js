@@ -32,6 +32,8 @@ const initializeDBAndServer = async () => {
 
 initializeDBAndServer();
 
+
+
 app.get("/",async (request,response) => {
     const getAllBooksQuery = `SELECT DISTINCT * FROM book`;
     const getBooks = await db.all(getAllBooksQuery);
@@ -51,17 +53,9 @@ app.get("/books/:id", async(request,response) => {
     const getBookQuery = `SELECT * FROM shelfbooks WHERE id = "${id}"`;
     const getBook = await db.get(getBookQuery);
     response.send(getBook);
-})
+});
 
-app.get("/update/:id", async (request,response) => {
-    const {id} = request.params;
-    let obj = {"title": "Beyond the village"};
-    let {title} = obj;
-    const updateTitleQuery = `UPDATE shelfbooks SET title = "${title}" WHERE id = "${id}"`;
-    const updateTitle = await db.run(updateTitleQuery);
 
-    response.send("Title Updated");
-})
 
 
 
