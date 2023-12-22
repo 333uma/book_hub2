@@ -55,6 +55,15 @@ app.get("/books/:id", async(request,response) => {
     response.send(getBook);
 });
 
+app.get("/book_hub/books", async (request, response) => {
+    const {status = "", search_q = ""} = request.query;
+    //let status = ["Currently Reading", "Want to Read", "Read"];
+    console.log(request.query);
+    const getFilteredBooksQuery = `SELECT * FROM shelfbooks WHERE read_status = "${status}" AND (title LIKE '%${search_q}%' OR author_name LIKE '%${search_q}%');`;
+    const getFilteredBooks = await db.all(getFilteredBooksQuery);
+    response.send(getFilteredBooks);
+})
+                                        
 
 
 
